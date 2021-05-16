@@ -1,9 +1,20 @@
 /* This is an almost-complete translation of https://github.com/haarismemon/oware/ from Java to C#
 */
+using System;
 using System.Collections.Generic;
 
 namespace Oware {
-    public class ScoreHouse {
+
+    public interface IScoreHouse {
+
+        int GetCount();
+
+        void AddSeed(Seed seed);
+
+        void Reset();
+    }
+
+    public class ScoreHouse : IScoreHouse {
         private List<Seed> seedsInHouse;
         public ScoreHouse() {
             seedsInHouse = new List<Seed>();
