@@ -1,9 +1,7 @@
 language: csharp
 solution: Oware.sln
-jobs:
- include:
-  - os: linux
-    dist: focal
-  - os: osx
-dotnet: 5.0
+os:
+  - linux
+  - osx
 script: dotnet test
+dotnet: 5.0
