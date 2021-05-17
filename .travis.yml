@@ -6,4 +6,4 @@ jobs:
     dist: focal
   - os: osx
 dotnet: 5.0
-script: dotnet tes
+script: dotnet test
