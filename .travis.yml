@@ -3,7 +3,7 @@ solution: Oware.sln
 mono: none
 script: 
   - dotnet test
-dotnet: 5.0
+dotnet: 5.0.203
 jobs:
   include:
     - os: linux
